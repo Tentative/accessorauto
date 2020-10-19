@@ -26,3 +26,21 @@
     </v-col>
   </v-row>
 </template>
+
+<style lang="scss" scoped>
+@import '../assets/styles/global.scss';
+@import '../layouts/global.css';
+
+@font-face {
+  font-family: 'Aero';
+  src: local('Aero'), url(../assets/fonts/Aero.ttf) format('truetype');
+}
+
+html {
+  font-family: 'Aero', sans-serif !important;
+}
+
+.v-application {
+  font-family: 'Aero', sans-serif !important;
+}
+</style>

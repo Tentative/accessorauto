@@ -1,15 +1,25 @@
 <template>
-  <v-row justify="center" align="center" class="mx-auto mt-6">
-    <div class="text-center text-uppercase text-lg-h5" style="color: #a91c17">
-      {{ message }}
-    </div>
-    <div class="text-center text-uppercase text-lg-h5" style="color: #a91c17">
-      <span>{{ subtitle + ' ' }}</span
-      ><span style="color: white !important"
-        ><a href="mailto:info@accessorauto.it">{{ contact }}</a></span
+  <section>
+    <v-row justify="center" align="center" class="mx-auto mt-6">
+      <div
+        class="text-center text-uppercase text-lg-h5 text-sm-h5"
+        style="color: #a91c17"
       >
-    </div>
-  </v-row>
+        {{ message }}
+      </div>
+    </v-row>
+    <v-row justify="center" align="center" class="mx-auto">
+      <div
+        class="text-center text-uppercase text-lg-h5 text-sm-h5"
+        style="color: #a91c17"
+      >
+        <span>{{ subtitle + ' ' }}</span
+        ><span style="color: white !important"
+          ><a href="mailto:info@accessorauto.it">{{ contact }}</a></span
+        >
+      </div>
+    </v-row>
+  </section>
 </template>
 
 <script>
