@@ -27,3 +27,8 @@ span a {
     color: white !important;
     text-transform: none !important;
 }
+
+.container--fluid {
+    padding: 0 !important;
+    overflow: auto;
+}

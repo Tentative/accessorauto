@@ -1,11 +1,19 @@
 <template>
-  <div>
-    <Logo />
+  <section id="coming-soon">
+    <no-ssr>
+      <video-background
+        :src="src_video"
+        style="height: 100vh"
+        overlay="linear-gradient(45deg,rgba(0,0,0,.3),rgba(0,0,0.3))"
+      >
+        <Logo />
 
-    <ComingSoon />
+        <ComingSoon />
 
-    <Services />
-  </div>
+        <Services />
+      </video-background>
+    </no-ssr>
+  </section>
 </template>
 
 <script>
@@ -21,7 +29,12 @@ export default {
       message: 'Sito in costruzione',
       subtitle: 'Per info contattaci su',
       contact: 'info@accessorauto.it',
+      VideoBackground: null,
+      src_video: require('@/static/videos/accessorauto_intro.mp4'),
     }
+  },
+  mounted() {
+    this.VideoBackground = require('~/plugins/vue-video-background.client.js')
   },
 }
 </script>
@@ -29,6 +42,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/global.scss';
 @import '../layouts/global.css';
+@import '../assets/styles/index.scss';
 
 @font-face {
   font-family: 'Aero';
