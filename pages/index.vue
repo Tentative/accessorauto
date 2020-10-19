@@ -1,10 +1,10 @@
 <template>
-  <section id="coming-soon">
-    <no-ssr>
+  <section id="coming-soon" style="height: 100vh; background-color: black">
+    <client-only>
       <video-background
         :src="src_video"
-        style="height: 100vh"
         overlay="linear-gradient(45deg,rgba(0,0,0,.3),rgba(0,0,0.3))"
+        style="max-height: 100%; height: 100vh"
       >
         <Logo />
 
@@ -12,7 +12,7 @@
 
         <Services />
       </video-background>
-    </no-ssr>
+    </client-only>
   </section>
 </template>
 

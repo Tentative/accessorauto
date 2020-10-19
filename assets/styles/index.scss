@@ -5,3 +5,9 @@
     margin: 0 !important;
     width: 100%;
 }
+
+.vue-responsive-videobg {
+    background-color: black !important;
+    // position: static;
+    overflow: hidden scroll;
+}
