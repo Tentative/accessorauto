@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Aero";
+    src: local("Aero"),
+            url(../assets/fonts/Aero.ttf)
+            format("truetype");
+}
+
+html {
+    font-family: "Aero" !important;
+}
+
+.text-lg-h6,
+.text-lg-h5,
+.text-lg-h4,
+.text-lg-h3,
+.text-lg-h2,
+.text-lg-h1 {
+    font-family: "Aero" !important;
+    letter-spacing: 1.3pt !important;
+}
+
+.v-application {
+    font-family: "Aero" !important;
+}
+
+span a {
+    color: white !important;
+    text-transform: none !important;
+}

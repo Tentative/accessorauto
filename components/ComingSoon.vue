@@ -1,21 +1,20 @@
 <template>
-  <div>
-    <Logo />
-
-    <ComingSoon />
-
-    <Services />
-  </div>
+  <v-row justify="center" align="center" class="mx-auto mt-6">
+    <div class="text-center text-uppercase text-lg-h5" style="color: #a91c17">
+      {{ message }}
+    </div>
+    <div class="text-center text-uppercase text-lg-h5" style="color: #a91c17">
+      <span>{{ subtitle + ' ' }}</span
+      ><span style="color: white !important"
+        ><a href="mailto:info@accessorauto.it">{{ contact }}</a></span
+      >
+    </div>
+  </v-row>
 </template>
 
 <script>
-import { Logo, Services } from '~/components/'
 export default {
-  layout: 'work',
-  components: {
-    Logo,
-    Services,
-  },
+  name: 'ComingSoon',
   data() {
     return {
       message: 'Sito in costruzione',
